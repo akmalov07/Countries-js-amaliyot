@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Countries List</title>
+</head>
+<body class="text-white bg-[#202C36] transition duration-500">
+
+  <header class="bg-[#2B3844] py-[24px]">
+    <div class="container mx-auto px-[20px]">
+      <nav class="flex justify-between items-center">
+        <h2 class="font-[800] text-[24px]">Where in the world?</h2>
+        <button id="mode" class="bg-blue-950 py-[15px] px-[20px ] border-none font-[600] text-[16px]">Dark MOde</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pb-[130px] pt-[48px]">
+    <div class="container mx-auto px-[20px]">
+      <form id="form" class="flex mb-[48px] px-[32px] py-[20px] w-full justify-between items-center bg-[#2B3844] rounded-[5px] md:w-[70%] lg:w-[50%] xl:w-[40%]">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          type="text"
+          id="search"
+          placeholder="Search for a country…"
+          class="bg-[#2B3844] text-white border-none outline-none w-[90%] placeholder:text-white"
+        />
+      </form>
+
+      <ul
+        id="flags_list"
+        class="flex flex-wrap gap-y-[120px] justify-between items-center md:gap-y-[60px] lg:gap-y-[40px] xl:gap-y-[30px]"
+      ></ul>
+    </div>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
